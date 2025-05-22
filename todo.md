@@ -4,10 +4,12 @@
 - Set up the container to work right away and allow checking changes within it
 
 ## Code Changes
-- Implement the mapping from Elevated to High severity
-  - Replace `types.ElevatedSeverity` with `types.HighSeverity`
+- Implement the mapping from Elevated to High severity **[DONE]**
 
-## Data Assets
+## Report Changes
+- Remove `Elevated` severity from reports
+
+## Data Assets **[DONE]**
 - Add data_classification tag with the following possible values:
   - Public
   - Internal Use
@@ -29,8 +31,12 @@
   - Scope (S) -> Impact
 
 ## Technical Asset Enhancements
-- Add to the Threagile model:
-  - `technology_name`: "POSTMAN"
-  - `technology_version`: 4.0
-  - `trust_level`: Valid User Credentials / API Key / Service Account
-  - Add new option to `type` enum: `external-entity-wk-developed`
+- Modify the `technologies` tag by changing it to an array of objects that have the following properties:
+  - `name`: "POSTMAN"
+  - `version`: 4.0
+  - `description`
+- Add a `trust_level` tag which allows the following values:
+  - "Valid User Credentials"
+  - "API Key"
+  - "Service Account"
+- Add new boolean tag `internally_developed`
