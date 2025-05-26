@@ -33,7 +33,7 @@
   - W rozszerzeniu Do VsCode dodać możliwość ustawienia wszystkich metryk i tam obliczać według kalkulatora
   
 
-## Technical Asset Enhancements
+## Technical Asset Enhancements **[DONE]**
 - Modify the `technologies` tag by changing it to an array of objects that have the following properties:
   - `name`: "POSTMAN"
   - `version`: 4.0
@@ -43,3 +43,4 @@
   - "API Key"
   - "Service Account"
 - Add new boolean tag `internally_developed`
+- schema do modyfikacji
